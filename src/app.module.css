@@ -1,0 +1,178 @@
+.app {
+  font-family: "Inter", sans-serif;
+  background-color: #FCFAF8;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 560px;
+  margin: 0 auto;
+  padding: 130px 0 70px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.addButton {
+  background: #EF711C;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all .3s;
+  position: relative;
+}
+
+.addButton::before {
+  content: '+';
+  position: absolute;
+  color: #fff;
+  font-size: 70px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  top: -12px;
+  left: 11px;
+}
+
+.addButton:hover {
+  background: #DD610D;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #EF711C;
+  margin: 10px 0 0 0;
+}
+
+.addButton {
+  background: #EF711C;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all .3s;
+  position: relative;
+}
+
+.addButton::before {
+  content: '+';
+  position: absolute;
+  color: #fff;
+  font-size: 70px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  top: -12px;
+  left: 11px;
+}
+
+.addButton:hover {
+  background: #DD610D;
+}
+
+.tasksList {
+  font-size: 18px;
+  line-height: 25px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+}
+
+.tasksItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 33px 10px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.tasksItem::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  bottom: 17px;
+  border-radius: 50%;
+  border: 2px solid #EF711C;
+}
+
+.inputBox {
+  padding: 20px 0 10px 20px;
+  border-bottom: 1px solid #000;
+}
+
+.input {
+  width: 80%;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  color: #334155;
+  background-color: inherit;
+}
+
+.setButton {
+  border-radius: 10px;
+  padding: 4px 7px;
+  font-weight: 500;
+  color: #334155;
+  border: 1px solid #E1E1E1;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.setButton:hover {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.completedButton {
+  background-color: inherit;
+  border: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.paperBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.line {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background-color: #000;
+  animation: line 1s linear forwards;
+}
+
+@keyframes line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
