@@ -25,8 +25,8 @@ function App() {
     if (newTask.trim() === '') {
       return
     }
-
-    setTasks(prevTasks => [...prevTasks, newTask])
+    const formattedNewFask = newTask.charAt(0).toUpperCase() + newTask.slice(1)
+    setTasks(prevTasks => [...prevTasks, formattedNewFask])
     setShowInput(false)
     setNewTask('')
   }
